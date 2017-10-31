@@ -113,7 +113,7 @@ class political_donors_finder(object):
         This funcation is to deal with raw transaction data by external calls.
         First, it divides the raw data mulitple lists, and extracts the information we want
         Second, if validates the extracted data:
-            If undividable, or CMTE_ID or amount error, call Return
+            If not individual, or CMTE_ID or amount error, call Return
             If zip is valid, the transaction will be stored into the dictionary records_by_zip, with key containing CMIE_ID and zip. Value is the transaction list returns the real-time median value.
             If the data is valid, the transaction will be stored into the dictionary records_by_date. Value is the transaction list.
         '''
